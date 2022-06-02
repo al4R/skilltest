@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Biggest Number</h2>
+
+<p id="demo">error</p>
+<script>
+    const n = "-30";
+    panjang = n.length;
+    if (panjang == 3 && n.charAt(0) == "-"){
+        document.getElementById("demo").innerHTML = "Null";
+    }else if(panjang == 3){
+        const array = n.split("");
+        array.sort();
+        array.reverse(); 
+        const join = array.join("");
+        document.getElementById("demo").innerHTML = parseInt(join);
+    }
+    else{
+        document.getElementById("demo").innerHTML = "Null";
+    }
+</script>
+</body>
+</html> 
+//314597181776-fb9r3qb06td5e74hs745a4nmde24teu8.apps.googleusercontent.com

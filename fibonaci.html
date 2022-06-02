@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>fibonaci</h2>
+
+
+<script>
+function fibonacci(arr) {
+  
+  let fib = [0, 1];
+  let data = [];
+  
+  for(let i = 2; i <= arr; i++) {
+    fib[i] = fib[i - 1] + fib[i - 2]; 
+    data.push(fib[i]);
+  }
+  document.write(data)
+  return ;
+}
+
+let arr = 19;
+fibonacci(arr);
+</script>
+</body>
+</html> 

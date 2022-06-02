@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>find Alphabet</h2>
+
+
+<script>
+function fibonacci(a,b) {
+    const alp = ["A","B","C","D","E",'F',"G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
+    let alp1  = alp.indexOf(a);
+    let alp2 = alp.indexOf(b);
+    let result = alp.slice(alp1,alp2)
+    let join = result.join('')
+    document.write(join);
+}
+let a="A";
+let b="C";
+fibonacci(a,b);
+</script>
+</body>
+</html> 
